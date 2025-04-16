@@ -5,7 +5,7 @@ export type LoanType = 'house' | 'car' | 'consumer' | 'business' | 'other'
 export type BankType = 'ICBC' | 'CCB' | 'ABC' | 'BOC' | 'BOCOM' | 'other'
 
 // 还款方式
-export type RepaymentMethodType = 'equalPayment' | 'equalPrincipal' | 'interestFirst' | 'bulletPayment' | 'other'
+export type RepaymentMethodType = 'equalPayment' | 'equalPrincipal'
 
 // 贷款状态
 export type LoanStatus = 'processing' | 'completed'
@@ -110,10 +110,7 @@ export const bankOptions = [
 // 还款方式选项
 export const repaymentMethodOptions = [
   { value: 'equalPayment', label: '等额本息' },
-  { value: 'equalPrincipal', label: '等额本金' },
-  { value: 'interestFirst', label: '先息后本' },
-  { value: 'bulletPayment', label: '一次性还本付息' },
-  { value: 'other', label: '其他' }
+  { value: 'equalPrincipal', label: '等额本金' }
 ] as const
 
 // 贷款状态选项

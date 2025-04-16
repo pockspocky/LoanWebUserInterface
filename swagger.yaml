@@ -75,7 +75,7 @@ components:
           description: 自定义银行
         repaymentMethod:
           type: string
-          enum: [equalPayment, equalPrincipal, interestFirst, bulletPayment, other]
+          enum: [equalPayment, equalPrincipal]
           description: 还款方式
         customRepaymentMethod:
           type: string
